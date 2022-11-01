@@ -3,8 +3,8 @@ import React from 'react';
 
 const App = () => {
   return (
-    <View style={styles.appContainer}>
-      <Text>Main App</Text>
+    <View style={styles.container}>
+      <Text>App</Text>
     </View>
   );
 };
@@ -12,7 +12,7 @@ const App = () => {
 export default App;
 
 const styles = StyleSheet.create({
-  appContainer: {
+  container: {
     flex: 1,
   },
 });
