@@ -9,6 +9,8 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 12,
+    borderBottomColor: '#1d3557',
+    borderBottomWidth: 1,
   },
   heading: {
     fontSize: 17,
