@@ -1,14 +1,16 @@
 import React from 'react';
-import {Button, Text} from 'react-native';
+import {Button, SafeAreaView, Text, View} from 'react-native';
+import {styles} from './HomeStyles';
+import Header from '../../components/header/Header';
 
 const Home = ({navigation}) => {
   return (
-    <>
-      <Text>Home</Text>
-      <Button onPress={() => navigation.navigate('Controls')} title="Controls">
-        {/* <Text>Controls</Text> */}
-      </Button>
-    </>
+    <SafeAreaView style={styles.container}>
+      <Header />
+      <View style={styles.upperSection}></View>
+      <View style={styles.lowerSection}></View>
+      <View style={styles.footer}></View>
+    </SafeAreaView>
   );
 };
 
