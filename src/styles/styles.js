@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 export const commonStyles = StyleSheet.create({
   button: {
     borderRadius: 100,
-    backgroundColor: 'red',
+    backgroundColor: '#e63946',
     paddingVertical: 8,
     paddingHorizontal: 18,
   },
