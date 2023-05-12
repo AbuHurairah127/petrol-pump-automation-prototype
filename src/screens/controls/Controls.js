@@ -5,15 +5,14 @@ import {styles} from './ControlsStyle';
 import {useState} from 'react';
 import moment from 'moment';
 import {useEffect} from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
-
 const Controls = ({navigation}) => {
-  const [today, SetToday] = useState(moment().format('MMMM Do YYYY'));
+  const [today, setToday] = useState(moment().format('MMMM Do YYYY'));
   const [now, setNow] = useState(moment().format('h:mm:ss a'));
 
   useEffect(() => {
     setInterval(() => {
       setNow(moment().format('h:mm:ss a'));
+      setToday(moment().format('MMMM Do YYYY'));
     }, 1000);
   }, []);
 
