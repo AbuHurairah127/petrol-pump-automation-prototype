@@ -9,7 +9,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Controls = ({navigation}) => {
   const [today, SetToday] = useState(moment().format('MMMM Do YYYY'));
-  const [now, setNow] = useState();
+  const [now, setNow] = useState(moment().format('h:mm:ss a'));
 
   useEffect(() => {
     setInterval(() => {
