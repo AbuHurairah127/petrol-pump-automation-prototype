@@ -1,10 +1,8 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 import Header from '../../components/header/Header';
 import {styles} from './ControlsStyle';
-import {useState} from 'react';
 import moment from 'moment';
-import {useEffect} from 'react';
 const Controls = ({navigation}) => {
   const [today, setToday] = useState(moment().format('MMMM Do YYYY'));
   const [now, setNow] = useState(moment().format('h:mm:ss a'));
